@@ -1,0 +1,18 @@
+check how the profile update, profile image update, display works
+
+Edit Photo Working -
+    react on submit
+        appends name, username, bio, and profile photo if present into FormData from the state hooks of each,
+
+        then after in the put request, /update-profile
+
+        upload.single('profileImage') - only allows only one file, Limits the Upload, only one file accepted
+
+        jwt extracts token from headers.authorization, jwt then checks token assign user to req.user
+
+        controller find user by req.user._id and update with the data sent, genreates new token and send it in response
+
+        again in profile.jsx, on response.data.success, changes usercontext by setuser, and replace old token with next token sent from backend
+
+Create POST working -
+    on submit - handleCreatePost
