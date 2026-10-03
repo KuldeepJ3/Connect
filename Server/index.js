@@ -12,7 +12,7 @@ app.use(cors({
     credentials: true
 }));
 
-const dbURI = process.env.MONGO_URI;
+const dbURI = process.env.MONGODB_URI;
 ConnectDB(dbURI)
 
 app.use(express.json())
