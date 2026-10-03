@@ -2,7 +2,7 @@ const UserModel = require('../Model/User')
 const bcrypt = require('bcrypt') //PassWord Hash
 const { setUser, getUser } = require('../jwt/jwt')
 const PostModel = require('../Model/posts')
-const NotificationModel = require('../Model/Notification');
+const NotificationModel = require('../Model/notification');
 const fs = require('fs');
 const path = require('path');
 
