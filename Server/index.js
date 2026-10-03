@@ -12,7 +12,7 @@ app.use(cors({
     credentials: true
 }));
 
-const dbURI = process.env.MONGO_URI || 'mongodb://localhost:27017/Connect';
+const dbURI = process.env.MONGO_URI;
 ConnectDB(dbURI)
 
 app.use(express.json())
